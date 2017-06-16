@@ -1,0 +1,82 @@
+<settings>
+	<servers>
+		<server>
+			<id>artifactory</id>
+			<username>admin</username>
+			<password>password</password>
+		</server>
+		<server>
+			<id>nexus</id>
+			<username>etajava</username>
+			<password>etajavapwd</password>
+			<configuration>
+				<httpConfiguration>
+					<all>
+						<params>
+							<param>
+								<name>http.authentication.preemptive</name>
+								<value>%b,true</value>
+							</param>
+						</params>
+					</all>
+				</httpConfiguration>
+				<httpHeaders>
+					<property>
+						<name>username</name>
+						<value>etajava</value>
+					</property>
+				</httpHeaders>
+			</configuration>
+		</server>
+	</servers>
+
+	<mirrors>
+		<mirror>
+			<!--This sends everything else to /public -->
+			<id>nexus</id>
+			<mirrorOf>*</mirrorOf>
+			<url>http://infynexus/nexus/content/groups/ETA/</url>
+
+		</mirror>
+	</mirrors>
+	<profiles>
+		<profile>
+			<id>nexus</id>
+			<!--Enable snapshots for the built in central repo to direct -->
+			<!--all requests to nexus via the mirror -->
+			<repositories>
+				<repository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+			<pluginRepositories>
+				<pluginRepository>
+					<id>central</id>
+					<url>http://central</url>
+					<releases>
+						<enabled>true</enabled>
+					</releases>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</pluginRepository>
+			</pluginRepositories>
+			<properties>
+				<archetypeCatalog>http://infynexus/nexus/content/groups/PUBLIC_REPO/
+				</archetypeCatalog>
+			</properties>
+
+		</profile>
+	</profiles>
+	<activeProfiles>
+		<!--make the profile active all the time -->
+		<activeProfile>nexus</activeProfile>
+	</activeProfiles>
+</settings>
