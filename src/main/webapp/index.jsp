@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>cal.ms.com</title>
-<body bgcolor="violet">
+<body bgcolor="yellow">
 <form method="get" action="./CalculateServlet">
 Number 1 : <input type="text" name="no1"> <br>
 Number 2 : <input type="text" name="no2"> <br>
