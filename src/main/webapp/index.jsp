@@ -7,8 +7,8 @@
 <title>cal.ms.com</title>
 <body bgcolor="violet">
 <form method="get" action="./CalculateServlet">
-Number 1 : <input type="text" name="no1"> <br>
-Number 2 : <input type="text" name="no2"> <br>
+Number 1 : <input type="text" name="Number1"> <br>
+Number 2 : <input type="text" name="Number2"> <br>
 Operator :
 
 <select name="opt">
