@@ -7,9 +7,10 @@
 <title>cal.ms.com</title>
 <body bgcolor="yellow">
 <form method="get" action="./CalculateServlet">
-Number 1 : <input type="text" name="Number1"> <br>
-Number 2 : <input type="text" name="Number2"> <br>
-Operator :
+
+Number 1 : <input type="text" name="New number 1"> <br>
+Number 2 : <input type="text" name="New number 2"> <br>
+
 
 <select name="opt">
 <option value="p"> + </option>
