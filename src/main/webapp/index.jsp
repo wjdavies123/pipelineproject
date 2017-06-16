@@ -20,7 +20,7 @@ Number 2 : <input type="text" name="Number 2"> <br>
 </select>
 
 <br>
-<input type="submit" value="Go">
+<input type="submit " value="Go">
 </form>
 </body>
 </html>
