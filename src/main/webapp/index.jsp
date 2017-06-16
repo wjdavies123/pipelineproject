@@ -19,7 +19,7 @@ Operator :
 </select>
 
 <br>
-<input type="submit" value="Go">
+<input type="submit " value="Go">
 </form>
 </body>
 </html>
