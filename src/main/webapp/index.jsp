@@ -8,8 +8,8 @@
 <body bgcolor="yellow">
 <form method="get" action="./CalculateServlet">
 
-Number 1 : <input type="text" name="New number 1"> <br>
-Number 2 : <input type="text" name="New number 2"> <br>
+Number 1 : <input type="text" name="number 1"> <br>
+Number 2 : <input type="text" name="number 2"> <br>
 
 
 <select name="opt">
