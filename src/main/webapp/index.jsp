@@ -7,8 +7,13 @@
 <title>cal.ms.com</title>
 <body bgcolor="yellow">
 <form method="get" action="./CalculateServlet">
+<<<<<<< HEAD
 Number 1 : <input type="text" name="New number 1"> <br>
 Number 2 : <input type="text" name="New number 2"> <br>
+=======
+Number 1 : <input type="text" name="Number1"> <br>
+Number 2 : <input type="text" name="Number2"> <br>
+>>>>>>> refs/remotes/origin/master
 Operator :
 
 <select name="opt">
