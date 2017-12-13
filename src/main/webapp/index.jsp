@@ -16,7 +16,7 @@ Number 2 : <input type="text" name="Number 2"> <br>
 <option value="p"> + </option>
 <option value="m"> - </option>
 <option value="mul"> * </option>
-<option value="d"> / </option>
+<option value="d "> / </option>
 </select>
 
 <br>
