@@ -28,7 +28,7 @@ public class CalculaterTest {
 
 	  @Test
 	  public void testAdd() {
-	 assertTrue(cl.doAdd(1,2)!=0);
+	 assertTrue(cl.doAdd(1,2)==-1);
 	  }
 	  
 	  @Test
